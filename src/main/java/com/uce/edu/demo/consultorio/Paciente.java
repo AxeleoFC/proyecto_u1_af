@@ -1,5 +1,10 @@
 package com.uce.edu.demo.consultorio;
 
+import org.springframework.stereotype.Component;
+
+//Les voy a poner una metadata (Se esta dando una inversion de control)
+@Component
+
 public class Paciente {
 	private String nombre;
 	private int edad;
