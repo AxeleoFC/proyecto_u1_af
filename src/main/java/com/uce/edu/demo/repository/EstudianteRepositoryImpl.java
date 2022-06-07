@@ -15,10 +15,13 @@ public class EstudianteRepositoryImpl implements IEstudianteRepository{
 	}
 
 	@Override
-	public void buscar(String apellido) {
+	public Estudiante buscar(String apellido) {
 		// TODO Auto-generated method stub
 		//Aqui se realiza la busqueda en la BD
 		System.out.println("Se ha buscado en la base de datos al estudiante "+apellido);
+		Estudiante e=new Estudiante();
+		e.setApellido(apellido);
+		return e;
 	}
 
 	@Override

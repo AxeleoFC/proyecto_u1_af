@@ -9,7 +9,7 @@ public interface IEstudianteRepository {
 	public void insertar(Estudiante e);
 	
 	//R: leer/buscar
-	public void buscar(String apellido);
+	public Estudiante buscar(String apellido);
 	
 	//U: actualizar/recargar
 	public void actualizar(Estudiante e);

@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.uce.edu.demo.consultorio.CitaMedica;
 import com.uce.edu.demo.consultorio.CitaMedica2;
+import com.uce.edu.demo.modelo.Estudiante;
+import com.uce.edu.demo.service.IEstudianteService;
 import com.uce.edu.demo.tienda.VenderProductoAtributos;
 import com.uce.edu.demo.tienda.VenderProductoConstructor;
 import com.uce.edu.demo.tienda.VenderProductoMetodoSET;
@@ -16,30 +18,8 @@ import com.uce.edu.demo.tienda.VenderProductoMetodoSET;
 @SpringBootApplication
 public class ProyectoU1AfApplication implements CommandLineRunner{
 	
-	//1) DI por atributo
 	@Autowired
-	CitaMedica cita;
-	
-	@Autowired
-	CitaMedica2 cita2;
-	
-	//Tarea 5
-	@Autowired
-	VenderProductoAtributos venderAtributos;
-	@Autowired
-	VenderProductoConstructor venderConstructor;
-	@Autowired
-	VenderProductoMetodoSET venderMetodoSET;
-		
-	public void vender() {
-		//1) DI por atributo
-		venderAtributos.vender("Juan", "1234569876", "Chocolate", "A125", 1.15, "Michael", "3562A");
-		//2) DI por constructor
-		venderConstructor.vender("Jose", "1856726986", "Arroz", "C325", 10.50, "Maria", "6594B");
-		//3) DI por metodos SET
-		venderMetodoSET.vender("Marco", "1756984236", "Pollo", "M256", 7.75, "Pepe", "5369C");
-	}
-
+	private IEstudianteService estudianteService;
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoU1AfApplication.class, args);
 	}
@@ -47,15 +27,25 @@ public class ProyectoU1AfApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-//		System.out.println("Mi primer proyecto con Spring Framework");
-//		
-//		String respuesta=cita.agendar(LocalDateTime.now(), "Javier", "Teran", 32, "Quito", "Pepito", 19);
-//		System.out.println(respuesta);
-//		
-//		String respuesta1=cita2.agendar(LocalDateTime.now(), "Javier", "Teran", 32, "Quito", "Pepito", 19);
-//		System.out.println(respuesta1);
+		Estudiante e=new Estudiante();
+		e.setNombre("Edison");
+		e.setApellido("Cayambe");
+		e.setCedula("1478523690");
+		this.estudianteService.ingresarEstudiante(e);
 		
-		vender();
+		Estudiante e1=new Estudiante();
+		e1.setNombre("Pepito");
+		e1.setApellido("Cabezas");
+		e1.setCedula("0236598741");
+		this.estudianteService.ingresarEstudiante(e1);
+		
+		//Usar los 3 metdos restantes
+		e.setCedula("1236054789");
+		this.estudianteService.actualizarEstudiante(e);
+		
+		this.estudianteService.buscarPorApellido("Cayambe");
+		
+		this.estudianteService.borrarEstudiante("1478523690");
 	}
 
 }
