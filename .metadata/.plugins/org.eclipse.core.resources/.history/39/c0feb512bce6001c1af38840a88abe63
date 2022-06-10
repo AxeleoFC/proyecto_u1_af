@@ -1,0 +1,9 @@
+package com.uce.edu.demo.banco.service;
+
+import com.uce.edu.demo.banco.modelo.Transferencia;
+
+public interface ITransferenciaService {
+	
+	public void insertar(Transferencia t);
+
+}

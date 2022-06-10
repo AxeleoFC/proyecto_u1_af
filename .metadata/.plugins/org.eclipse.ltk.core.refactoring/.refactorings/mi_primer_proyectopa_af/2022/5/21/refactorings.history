@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;fechaCita&apos; in &apos;com.edu.ec.consultorio.CitaMedica&apos; to &apos;fechaAgenda&apos;&#x0D;&#x0A;- Original project: &apos;mi_primer_proyectopa_af&apos;&#x0D;&#x0A;- Original element: &apos;com.edu.ec.consultorio.CitaMedica.fechaCita&apos;&#x0D;&#x0A;- Renamed element: &apos;com.edu.ec.consultorio.CitaMedica.fechaAgenda&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;fechaCita&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.edu.ec.consultorio{CitaMedica.java[CitaMedica^fechaCita" name="fechaAgenda" references="true" setter="false" stamp="1653093786793" textual="false" version="1.0"/>
+</session>

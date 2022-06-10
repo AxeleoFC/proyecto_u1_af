@@ -1,0 +1,36 @@
+package com.uce.edu.demo.service;
+
+import org.springframework.stereotype.Service;
+
+import com.uce.edu.demo.modelo.Matricula;
+
+@Service
+public class MatriculaServiceImpl implements IMatriculaService {
+	
+	private IMatriculaService matriculaService;
+
+	@Override
+	public void ingresarMatricula(Matricula ma) {
+		// TODO Auto-generated method stub
+		this.matriculaService.ingresarMatricula(ma);
+	}
+
+	@Override
+	public void buscarMatricula(String numero) {
+		// TODO Auto-generated method stub
+		this.matriculaService.buscarMatricula(numero);
+	}
+
+	@Override
+	public void actualizarMatricula(Matricula ma) {
+		// TODO Auto-generated method stub
+		this.matriculaService.actualizarMatricula(ma);
+	}
+
+	@Override
+	public void borrarMatricula(String numero) {
+		// TODO Auto-generated method stub
+		this.matriculaService.borrarMatricula(numero);
+	}
+
+}

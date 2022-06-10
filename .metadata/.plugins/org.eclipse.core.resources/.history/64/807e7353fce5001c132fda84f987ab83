@@ -1,0 +1,31 @@
+package com.uce.edu.demo.repository;
+
+import com.uce.edu.demo.modelo.Matricula;
+
+public class MatriculaRepositoryImpl implements IMatriculaRepository {
+
+	@Override
+	public void insertar(Matricula e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Matricula buscar(String numero) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void actualizar(Matricula e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminar(String numero) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

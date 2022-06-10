@@ -1,0 +1,31 @@
+package com.uce.edu.demo.service;
+
+import com.uce.edu.demo.modelo.Matricula;
+
+public class MatriculaServiceImpl implements IMatriculaService {
+
+	@Override
+	public void ingresarMatricula(Matricula ma) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void buscarMatricula(String numero) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actualizarMatricula(Matricula ma) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void borrarMatricula(String numero) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

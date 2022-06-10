@@ -1,0 +1,24 @@
+package com.uce.edu.demo.banco.service;
+
+import java.math.BigDecimal;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.uce.edu.demo.banco.repository.IDepositoRepository;
+
+@Service
+public class DepositoServiceImpl implements IDepositoService {
+	
+	@Autowired
+	private ICuentaBancariaService cuentaService;
+	@Autowired
+	private IDepositoRepository depositoRepository;
+
+	@Override
+	public void realizarDeposito(String numCtaDestino, BigDecimal monto) {
+		// TODO Auto-generated method stub
+		this.cuentaService.buscar(numCtaDestino);
+	}
+
+}

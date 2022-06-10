@@ -1,0 +1,19 @@
+package com.uce.edu.demo.banco.repository;
+
+import com.uce.edu.demo.banco.modelo.CuentaBancaria;
+
+public class CuentaBancariaRepositoryImpl implements ICuentaBancariaRepository {
+
+	@Override
+	public void actualizar(CuentaBancaria c) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public CuentaBancaria buscar(String numero) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.service{IEstudianteService.java[IEstudianteService" modifiers="513" timestamp="1654044286989"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.service{IMateriaService.java[IMateriaService" modifiers="513" timestamp="1654562298129"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.service{IMatriculaService.java[IMatriculaService" modifiers="513" timestamp="1654562298124"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.repository{IMateriaRepository.java[IMateriaRepository" modifiers="513" timestamp="1654562480888"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.repository{IMatriculaRepository.java[IMatriculaRepository" modifiers="513" timestamp="1654562980724"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.repository{ITransferenciaRepository.java[ITransferenciaRepository" modifiers="513" timestamp="1654878704893"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.repository{ICuentaBancariaRepository.java[ICuentaBancariaRepository" modifiers="513" timestamp="1654878124400"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.service{ICuentaBancariaService.java[ICuentaBancariaService" modifiers="513" timestamp="1654878982765"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.service{ITransferenciaService.java[ITransferenciaService" modifiers="513" timestamp="1654879921638"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.repository{IDepositoRepository.java[IDepositoRepository" modifiers="513" timestamp="1654878334741"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.service{IDepositoService.java[IDepositoService" modifiers="513" timestamp="1654880259512"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.repository{IRetiroRepository.java[IRetiroRepository" modifiers="513" timestamp="1654880044214"/>
+    <typeInfo handle="=proyecto_u1_af/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.uce.edu.demo.banco.service{IRetiroService.java[IRetiroService" modifiers="513" timestamp="1654881314343"/>
+</typeInfoHistroy>

@@ -1,0 +1,32 @@
+package com.uce.edu.demo.repository;
+
+import com.uce.edu.demo.modelo.Materia;
+
+public class MateriaRepositoryImpl implements IMateriaRepository {
+
+	@Override
+	public void insertar(Materia e) {
+		// TODO Auto-generated method stub
+		//Aqui se realiza la insercion en la BD
+		System.out.println("Se ha insertado en la base de datos al estudiante "+e);
+	}
+
+	@Override
+	public Materia buscar(String nombre) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void actualizar(Materia e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminar(String nombre) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

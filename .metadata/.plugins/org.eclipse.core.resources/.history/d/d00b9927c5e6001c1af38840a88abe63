@@ -1,0 +1,13 @@
+package com.uce.edu.demo.banco.service;
+
+import java.math.BigDecimal;
+
+public class DepositoServiceImpl implements IDepositoService {
+
+	@Override
+	public void realizarDeposito(String numCtaDestino, BigDecimal monto) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

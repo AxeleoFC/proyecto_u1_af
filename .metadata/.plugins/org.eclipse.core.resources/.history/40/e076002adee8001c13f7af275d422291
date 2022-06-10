@@ -1,0 +1,36 @@
+package com.uce.edu.demo.banco.repository;
+
+import java.time.LocalDateTime;
+
+import com.uce.edu.demo.banco.modelo.Retiro;
+
+public class RetiroRepositoryImpl implements IRetiroRepository {
+
+	@Override
+	public void insertarRetiro(Retiro r) {
+		// TODO Auto-generated method stub
+		System.out.println("Se creo el deposito: "+r);
+	}
+
+	@Override
+	public void actualizar(Retiro d) {
+		// TODO Auto-generated method stub
+		System.out.println("Deposito actualizada: "+r);
+	}
+
+	@Override
+	public Deposito buscar(LocalDateTime fecha) {
+		// TODO Auto-generated method stub
+		System.out.println("Se busca el deposito: "+fecha);
+		Retiro d=new Retiro();
+		return r;
+	}
+
+	@Override
+	public void eliminar(LocalDateTime fecha) {
+		// TODO Auto-generated method stub
+		System.out.println("Se ha eliminado en la base de datos el deposito");
+	}
+
+
+}

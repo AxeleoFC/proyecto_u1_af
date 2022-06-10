@@ -1,0 +1,21 @@
+package com.uce.edu.demo.banco.service;
+
+import java.math.BigDecimal;
+import org.springframework.stereotype.Service;
+
+import com.uce.edu.demo.banco.modelo.Transferencia;
+import com.uce.edu.demo.banco.repository.ITransferenciaRepository;
+
+@Service
+public class TransferenciaServiceImpl implements ITransferenciaService {
+	
+	private ITransferenciaRepository transferenciaRepository;
+
+	@Override
+	public void realizarTransferencia(String cuentaOrigen, String cuentaDestino, BigDecimal monto) {
+		// TODO Auto-generated method stub
+		Transferencia t=new Transferencia();
+		this.transferenciaRepository.insertar(t);
+	}
+
+}
