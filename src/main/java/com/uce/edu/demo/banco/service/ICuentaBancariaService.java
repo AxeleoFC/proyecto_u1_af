@@ -6,5 +6,7 @@ public interface ICuentaBancariaService {
 	
 	public void actualizar(CuentaBancaria c);
 	public CuentaBancaria buscar(String numero);
+	public void crearCuenta(CuentaBancaria c);
+	public void eliminarCuenta(String numeroCuenta);
 
 }
