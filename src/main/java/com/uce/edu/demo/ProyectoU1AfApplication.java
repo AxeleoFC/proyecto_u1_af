@@ -38,6 +38,7 @@ public class ProyectoU1AfApplication implements CommandLineRunner{
 		this.retiroService.buscarRetiro(LocalDateTime.now());
 		this.retiroService.actualizarRetiro("14", LocalDateTime.now());
 		this.retiroService.eliminarRetiro("14", LocalDateTime.now(), new BigDecimal(50));
+		
 	}
 
 }
