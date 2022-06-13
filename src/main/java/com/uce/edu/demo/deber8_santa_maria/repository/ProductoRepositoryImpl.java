@@ -1,4 +1,4 @@
-package com.uce.edu.demo.deber8_santa_maria.modelo.repository;
+package com.uce.edu.demo.deber8_santa_maria.repository;
 
 import org.springframework.stereotype.Repository;
 

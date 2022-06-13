@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.uce.edu.demo.deber8_santa_maria.modelo.Producto;
-import com.uce.edu.demo.deber8_santa_maria.modelo.repository.ProductoRepositoryImpl;
+import com.uce.edu.demo.deber8_santa_maria.repository.ProductoRepositoryImpl;
 @Service
 public class ProductoServiceImpl implements IProductoService {
 	

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.uce.edu.demo.deber8_santa_maria.modelo.Inventario;
 import com.uce.edu.demo.deber8_santa_maria.modelo.Producto;
-import com.uce.edu.demo.deber8_santa_maria.modelo.repository.IInventarioRepository;
+import com.uce.edu.demo.deber8_santa_maria.repository.IInventarioRepository;
 @Service
 public class InventariServiceImpl implements IInventariService {
 
