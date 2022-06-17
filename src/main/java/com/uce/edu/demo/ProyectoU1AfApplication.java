@@ -68,7 +68,7 @@ public class ProyectoU1AfApplication implements CommandLineRunner{
 		this.provincia1.setNombre("Leche");
 		this.provincia1.setCodProducto("857");
 		this.provincia1.setCantidad(89);
-		this.provincia1.setPrecioU(new BigDecimal(0.90));
+		this.provincia1.setPrecioU(new BigDecimal(0.9));
 		this.provincia1.setFechaIngreso(LocalDateTime.of(2022, 05, 03, 10, 50, 25));
 		
 		System.out.println("-----------------------");
@@ -77,11 +77,11 @@ public class ProyectoU1AfApplication implements CommandLineRunner{
 		this.provincia2.setNombre("Huevos");
 		this.provincia2.setCodProducto("256");
 		this.provincia2.setCantidad(255);
-		this.provincia2.setPrecioU(new BigDecimal(0.15));
+		this.provincia2.setPrecioU(new BigDecimal(0.150));
 		this.provincia2.setFechaIngreso(LocalDateTime.of(2022, 05, 25, 16, 45, 24));
 		
 		System.out.println("-----------------------");
-		System.out.println(this.provincia1+"\n");
+		System.out.println(this.provincia2+"\n");
 		
 		
 		

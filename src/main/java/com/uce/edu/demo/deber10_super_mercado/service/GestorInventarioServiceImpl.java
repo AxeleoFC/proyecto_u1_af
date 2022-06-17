@@ -43,7 +43,7 @@ public class GestorInventarioServiceImpl implements IGestorInventarioService{
 		
 		BigDecimal iva=productoR.getPrecioU().multiply(new BigDecimal(0.12));
 		
-		pv.add(pc).add(g).add(iva);
+		pv=pv.add(pc).add(g).add(iva);
 		
 		productoR.setPrecioU(pv.setScale(2, RoundingMode.HALF_UP));
 		return productoR;
