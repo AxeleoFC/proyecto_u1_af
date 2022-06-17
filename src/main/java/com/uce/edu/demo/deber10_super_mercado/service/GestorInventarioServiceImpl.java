@@ -1,4 +1,4 @@
-package com.uce.edu.demo.deber8_santa_maria.service;
+package com.uce.edu.demo.deber10_super_mercado.service;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -7,8 +7,8 @@ import java.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.uce.edu.demo.deber8_santa_maria.modelo.Inventario;
-import com.uce.edu.demo.deber8_santa_maria.modelo.Producto;
+import com.uce.edu.demo.deber10_super_mercado.modelo.InventarioSM;
+import com.uce.edu.demo.deber10_super_mercado.modelo.ProductoGeneral;
 
 @Service
 public class GestorInventarioServiceImpl implements IGestorInventarioService{
@@ -21,38 +21,32 @@ public class GestorInventarioServiceImpl implements IGestorInventarioService{
 		System.out.println("REPORTE DE LOS PRODUCTOS");
 		System.out.println("Nombre del producto – Cantidad – Precio Venta – Fecha de ingreso a bodega");
 		
-		Inventario inventari=inventarioService.buscarInventario(null);
+		InventarioSM inventari=inventarioService.buscarInventario(null);
 		
-		for(Producto p:inventari.getProductosEnInventari()) {
+		for(ProductoGeneral p:inventari.getProductosEnInventari()) {
 			
 			if(fechaInicio.compareTo(p.getFechaIngreso())<0) {
-				Producto precioN=calculoVenta(p);
+				ProductoGeneral precioN=calculoVenta(p);
 				System.out.println(precioN.getNombre()+" - "+precioN.getCantidad()+" - "+precioN.getPrecioU()+" - "+precioN.getFechaIngreso());
 			}
 		}
 	}
 	
-	private Producto calculoVenta(Producto p) {
-		Producto productoR=p;
+	private ProductoGeneral calculoVenta(ProductoGeneral p) {
+		ProductoGeneral productoR=p;
 		
-		double pv;
+		BigDecimal pv=new BigDecimal(0);
 		
-		double pc=p.getPrecioU().doubleValue();
+		BigDecimal pc=productoR.getPrecioU();
 		
-		double g=pc*0.1;
+		BigDecimal g=productoR.getPrecioU().multiply(new BigDecimal(0.1));
 		
-		double iva=pc*0.12;
+		BigDecimal iva=productoR.getPrecioU().multiply(new BigDecimal(0.12));
 		
-		pv=pc+g+iva;
+		pv.add(pc).add(g).add(iva);
 		
-		productoR.setPrecioU(new BigDecimal(pv).setScale(2, RoundingMode.HALF_UP));
+		productoR.setPrecioU(pv.setScale(2, RoundingMode.HALF_UP));
 		return productoR;
-	}
-	
-	//Metodo creado para enlazar las capaz service de inventario
-	//ya que no se puede acceder a la base de datos
-	public void gestioninventario(IInventariService i) {
-		this.inventarioService=i;
 	}
 
 }

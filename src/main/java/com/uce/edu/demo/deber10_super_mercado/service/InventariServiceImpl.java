@@ -1,11 +1,14 @@
-package com.uce.edu.demo.deber8_santa_maria.service;
+package com.uce.edu.demo.deber10_super_mercado.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.uce.edu.demo.deber8_santa_maria.modelo.Inventario;
-import com.uce.edu.demo.deber8_santa_maria.modelo.Producto;
-import com.uce.edu.demo.deber8_santa_maria.repository.IInventarioRepository;
+import com.uce.edu.demo.deber10_super_mercado.modelo.InventarioSM;
+import com.uce.edu.demo.deber10_super_mercado.modelo.ProductoGeneral;
+import com.uce.edu.demo.deber10_super_mercado.modelo.ProductoNacional;
+import com.uce.edu.demo.deber10_super_mercado.modelo.ProductoPorProvincia;
+import com.uce.edu.demo.deber10_super_mercado.repository.IInventarioRepository;
+
 @Service
 public class InventariServiceImpl implements IInventariService {
 
@@ -13,10 +16,15 @@ public class InventariServiceImpl implements IInventariService {
 	private IInventarioRepository inventariRepo;
 	@Autowired
 	private IProductoService productoService;
+	@Autowired
+	private ProductoNacional productoN;
+	@Autowired
+	private ProductoPorProvincia productoP;
 	
 	@Override
-	public void crearInventario(Inventario i) {
+	public void crearInventario(InventarioSM i) {
 		// TODO Auto-generated method stub
+		System.out.println("DI desde Service SINGLETON: "+this.productoN);
 		this.inventariRepo.crearI(i);
 	}
 
@@ -27,19 +35,19 @@ public class InventariServiceImpl implements IInventariService {
 	}
 
 	@Override
-	public Inventario buscarInventario(String codInventario) {
+	public InventarioSM buscarInventario(String codInventario) {
 		// TODO Auto-generated method stub
 		return this.inventariRepo.buscarI(codInventario);
 	}
 
 	@Override
-	public void actualizarInventario(Inventario i) {
+	public void actualizarInventario(InventarioSM i) {
 		// TODO Auto-generated method stub
 		this.inventariRepo.actualizarI(i);
 	}
 
 	@Override
-	public void insertarProductoEnInventari(Producto p) {
+	public void insertarProductoEnInventari(ProductoGeneral p) {
 		// TODO Auto-generated method stub
 		this.productoService.ingresarProducto(p);
 		this.inventariRepo.insertarProducto(p);
